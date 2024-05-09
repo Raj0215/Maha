@@ -142,3 +142,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+@media only screen and (max-width: 768px) {
+    /* Styles for screens up to 768px wide (e.g., tablets) */
+    /* Adjustments to layout, font sizes, etc. */
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for screens up to 480px wide (e.g., smartphones) */
+    /* Further adjustments for smaller screens */
+}
