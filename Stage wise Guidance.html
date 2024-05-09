@@ -95,7 +95,42 @@ nav ul li a {
 .goog-te-menu2-item:hover {
     background-color: #eaeaea;
 }
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
+    .logo {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .corner-section {
+        margin: 20px 0;
+    }
+}
+
+/* For even smaller screens */
+@media only screen and (max-width: 480px) {
+    .logo img {
+        width: 80px;
+    }
+
+    .item img {
+        width: 30px;
+    }
+}
   </style>
 </head>
 <body>
