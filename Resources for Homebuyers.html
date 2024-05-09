@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Adding a font-family for better readability */
+}
+
+.container {
+  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .box {
+    width: 200px;
+    padding: 80px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    /* Gradient background */
+    background: linear-gradient(to bottom, #4CAF50, #008CBA);
+    color: #fff; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  }
+  .box a {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Text color */
+    text-decoration: none; 
+  }
+  .box a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  a:hover {
+    text-decoration: underline;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+/* Styling for the translation dropdown */
+.goog-te-menu-value {
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.goog-te-menu-value:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the translation dropdown arrow */
+.goog-te-menu-arrow {
+    display: none; /* Hide the default arrow */
+}
+
+/* Styling for the translation dropdown menu items */
+.goog-te-menu2 {
+    padding: 0;
+}
+
+.goog-te-menu2-item {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.goog-te-menu2-item:hover {
+    background-color: #eaeaea;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li> 
+                <li><a href="Guidance for Home Buyers.html">Home Buyers</a></li>
+                <li><a href="Stage wise Guidance.html">Devloper</a></li>
+                <li><a href="Rights and Duties of the allottees.html">Real Estate Agent</a></li>
+                <li><a href="#">Complaint Redressal</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li>
+                  <div id="google_translate_element"></div>
+              </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="navbar">
+    <!-- Left side: Boxes for resources -->
+    <div class="box">
+      <a href="rera_act_2016.pdf" download>RERA Act, 2016</a>
+      <a href="#">Model copy of Allotment Letter</a>
+      <a href="#">Model copy of Agreement for Sale</a>
+      <a href="#">Guidelines for conciliation Forum</a>
+      <a href="#">Guidelines for filling Complaint</a>
+    </div>
+  
+    <!-- Right side: Image -->
+    <div class="image">
+      <img src="22918640.jpg" alt="Placeholder image">
+    </div>
+  </div>
+  <script type="text/javascript">
+    var isTranslated = false;
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'mr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            googleTranslateElement.value = 'en'; // Set the default language to English
+            var event = new Event('change');
+            googleTranslateElement.dispatchEvent(event);
+        }
+    }
+
+    function toggleTranslation() {
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            if (isTranslated) {
+                googleTranslateElement.value = 'en'; // Set the language back to English
+            } else {
+                googleTranslateElement.value = 'mr'; // Set the language to Marathi
+            }
+            var event = new Event('change');
+            googleTranslateElement.dispatchEvent(event);
+            isTranslated = !isTranslated;
+        }
+    }
+</script>
+</script>
+</body>
+</html>

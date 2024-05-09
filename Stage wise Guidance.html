@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Adding a font-family for better readability */
+}
+
+.container {
+  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.custom-containerr {
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin-top: 20px;
+    }
+    .column {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    a:hover {
+    text-decoration: underline;
+}
+/* Styling for the translation dropdown */
+.goog-te-menu-value {
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.goog-te-menu-value:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the translation dropdown arrow */
+.goog-te-menu-arrow {
+    display: none; /* Hide the default arrow */
+}
+
+/* Styling for the translation dropdown menu items */
+.goog-te-menu2 {
+    padding: 0;
+}
+
+.goog-te-menu2-item {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.goog-te-menu2-item:hover {
+    background-color: #eaeaea;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li> 
+                <li><a href="Guidance for Home Buyers.html">Home Buyers</a></li>
+                <li><a href="Stage wise Guidance.html">Devloper</a></li>
+                <li><a href="Rights and Duties of the allottees.html">Real Estate Agent</a></li>
+                <li><a href="#">Complaint Redressal</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li>
+                  <div id="google_translate_element"></div>
+              </li>
+            </ul>
+        </nav>
+    </div>
+  <div class="custom-container">
+    <div class="column">
+      <img src="1.png" alt="Image 1">
+      <h2>1. Before Buying the property - Key points to consider</h2>
+      <p><b>The process of purchasing a home can be thrilling, especially if it's your first. Take into account important variables such as finding project registration, learning about project specifics, and taking measures.Finding Project on MahaRERA- Project search
+        Researching about the Property- Title, Approvals, Common amenities, and services etc,Agreement stage- Understanding terms and Conditions.</b></p>
+    </div>
+    <div class="column">
+      <img src="2.png" alt="Image 2">
+      <h2>2. After Owning a property</h2>
+      <p><b>Tracking Progress- Project Completion, NOC, Approval Stages, Monitoring Quarterly compliances, Project Validity etc.</b>></p>
+    </div>
+    <div class="column">
+      <img src="3.png" alt="Image 3">
+      <h2>3. Possession stage</h2>
+      <p><b>Before taking the possession, make sure all your documents are well in place. Check if you have received the original documents and photocopies of all the requisite documents from the Promoter.</b>></p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var isTranslated = false;
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'mr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            googleTranslateElement.value = 'en'; // Set the default language to English
+            var event = new Event('change');
+            googleTranslateElement.dispatchEvent(event);
+        }
+    }
+
+    function toggleTranslation() {
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            if (isTranslated) {
+                googleTranslateElement.value = 'en'; // Set the language back to English
+            } else {
+                googleTranslateElement.value = 'mr'; // Set the language to Marathi
+            }
+            var event = new Event('change');
+            googleTranslateElement.dispatchEvent(event);
+            isTranslated = !isTranslated;
+        }
+    }
+</script>
+</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <style>
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Adding a font-family for better readability */
+}
+
+.container {
+  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.stage {
+            margin-bottom: 30px;
+        }
+        .stage-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .stage-steps {
+            font-size: 18px;
+            margin-left: 20px;
+        }
+        a:hover {
+    text-decoration: underline;
+}
+/* Styling for the translation dropdown */
+.goog-te-menu-value {
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.goog-te-menu-value:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the translation dropdown arrow */
+.goog-te-menu-arrow {
+    display: none; /* Hide the default arrow */
+}
+
+/* Styling for the translation dropdown menu items */
+.goog-te-menu2 {
+    padding: 0;
+}
+
+.goog-te-menu2-item {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.goog-te-menu2-item:hover {
+    background-color: #eaeaea;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li> 
+                <li><a href="Guidance for Home Buyers.html">Home Buyers</a></li>
+                <li><a href="Stage wise Guidance.html">Devloper</a></li>
+                <li><a href="Rights and Duties of the allottees.html">Real Estate Agent</a></li>
+                <li><a href="#">Complaint Redressal</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Statistics</a></li>
+                <li>
+                    <div id="google_translate_element"></div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="stage">
+      <div class="stage-title">1. Before Buying the Property - Key Points to Consider</div>
+      <div class="stage-steps">
+          <p><strong>Finding Project on MahaRERA:</strong> Use the Project search feature on MahaRERA to find registered projects.</p>
+          <p><strong>Researching about the Property:</strong> Investigate important aspects such as title, approvals, common amenities, and services.</p>
+          <p><strong>Agreement Stage:</strong> Understand the terms and conditions outlined in the agreement.</p>
+      </div>
+  </div>
+  <div class="stage">
+      <div class="stage-title">2. After Owning a Property</div>
+      <div class="stage-steps">
+          <p><strong>Tracking Progress:</strong> Monitor the project's completion, obtain necessary NOCs, and track approval stages.</p>
+          <p><strong>Monitoring Quarterly Compliances:</strong> Keep an eye on quarterly compliances to ensure adherence to regulations.</p>
+          <p><strong>Project Validity:</strong> Verify the validity of the project's approvals and documents.</p>
+      </div>
+  </div>
+  <div class="stage">
+    <div class="stage-title">3. Possession Stage Guidance</div>
+    <div class="stage-steps">
+        <p><strong>Before taking possession, ensure all your documents are in place and check for the following important parameters and documentations:</strong></p>
+        
+        <p><strong>1. OC Status</strong></p>
+        <p>Check if the Occupancy Certificate (OC) has been issued by the civic authority, indicating compliance with approved plans and building laws.</p>
+
+        <p><strong>2. Architect’s Completion Certificate (Form 4)</strong></p>
+        <p>Verify if the promoter has uploaded Form 4, issued by the architect upon receipt of the OC, on the MahaRERA portal.</p>
+
+        <p><strong>3. Amenities</strong></p>
+        <p>Inspect all promised amenities to ensure they are in place and usable. Check project work status on MahaRERA portal for any delays.</p>
+
+        <p><strong>4. Internal Work</strong></p>
+        <p><strong>Fittings</strong></p>
+        <p>Check switchboards, doorknobs, bathroom fittings, etc., ensuring they match the agreed specifications.</p>
+        <p><strong>Doors and Windows</strong></p>
+        <p>Ensure all doors and windows comply with sanctioned plans and are of satisfactory quality.</p>
+        <p><strong>5. Workmanship Defects</strong></p>
+        <p>Inspect for cracks, holes, or deformations in the construction.</p>
+        <p><strong>6. Drainage Outlets and Leakages</strong></p>
+        <p>Check drainage outlets for clogs and inspect taps, faucets, and sinks for leakages.</p>
+        <p><strong>7. Electrical Fittings</strong></p>
+        <p>Verify the functionality of switches, plug-points, and MCBs, ensuring they meet quality standards.</p>
+        <p><strong>8. Size of the Rooms</strong></p>
+        <p>Measure room dimensions to ensure compliance with the Sale Agreement and sanctioned plans.</p>
+    </div>
+</div>
+
+
+
+</header>
+
+<script type="text/javascript">
+    var isTranslated = false;
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'mr',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            googleTranslateElement.value = 'en'; // Set the default language to English
+            var event = new Event('change');
+            googleTranslateElement.dispatchEvent(event);
+        }
+    }
+
+    function toggleTranslation() {
+        var googleTranslateElement = document.querySelector('.goog-te-combo');
+        if (googleTranslateElement) {
+            if (isTranslated) {
+                googleTranslateElement.value = 'en'; // Set the language back to English
+            } else {
+                googleTranslateElement.value = 'mr'; // Set the language to Marathi
+            }
+            var event = new Event('change');
+            googleTranslateElement.dispatchEvent(event);
+            isTranslated = !isTranslated;
+        }
+    }
+</script>
+</script>
+</body>
+</html>

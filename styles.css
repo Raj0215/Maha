@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+  
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif; /* Adding a font-family for better readability */
+}
+
+.container {
+  
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+.logo img {
+    width: 100px; /* Adjust according to your logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+/* Styling for the translation dropdown */
+.goog-te-menu-value {
+    padding: 10px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.goog-te-menu-value:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the translation dropdown arrow */
+.goog-te-menu-arrow {
+    display: none; /* Hide the default arrow */
+}
+
+/* Styling for the translation dropdown menu items */
+.goog-te-menu2 {
+    padding: 0;
+}
+
+.goog-te-menu2-item {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.goog-te-menu2-item:hover {
+    background-color: #eaeaea;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+}
+
+.corner-section {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #b4b7bd;
+    border: 1px solid #ddd;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.more-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+ a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
